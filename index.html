@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body>
+    <div class="dj-container">
+      <header>
+        <h2>Daily Journal</h2>
+      </header>
+
+      <main id="container">
+        <!-- Journal Form -->
+        <form class="entryForm">
+          <!-- Date of entry -->
+          <fieldset>
+            <label for="entryDate">Date of entry</label>
+            <input type="date" name="entryDate" class="entryForm__date" />
+          </fieldset>
+          <!-- Concepts covered -->
+          <fieldset>
+            <label for="conceptsCovered">Concepts covered</label>
+            <input type="text" name="conceptsCovered" class="entryForm__concepts" />
+          </fieldset>
+          <!-- Journal Entry -->
+          <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+            <textarea name="journalEntry" class="entryForm__journal"></textarea>
+          </fieldset>
+          <!-- Mood for the day -->
+          <fieldset>
+            <label for="moodEntry">Mood for the day</label>
+            <select name="moodEntry" class="entryForm__mood">
+              <option value="unconcerned">Unconcerned</option>
+              <option value="happy">Happy</option>
+              <option value="content">Content</option>
+              <option value="impartial">Impartial</option>
+              <option value="amused">Amused</option>
+              <option value="objective">Objective</option>
+              <option value="tragic">Tragic</option>
+            </select>
+          </fieldset>
+          <!-- Submit button -->
+          <input type="submit" value="Record Journal Entry" />
+        </form>
+
+        <!-- Entries -->
+        <article id="entries"></article>
+      </main>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

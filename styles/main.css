@@ -1,0 +1,13 @@
+body {
+  font-size: 14px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.dj-container {
+  max-width: 55%;
+  margin: 0 auto;
+}
